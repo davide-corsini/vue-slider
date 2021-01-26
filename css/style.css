@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+}
+.tot-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.lasalettadellarte.it/wp-content/uploads/2020/09/ALEANDRO-RONCARA-Il-Principe-delle-maree-serigrafia-materica-su-supporto-rigido-40x40-1-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: run 10s linear;
+
+}
+
+@keyframes run{
+    0%{background-position: 0 0}
+    100%{background-position: 0 100vh;}
+}
+
+
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background-color: brown;
+}
+
+ul.head-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 200px;
+    background-color: pink;
+}
+
+.mini-menu{
+    display: flex;
+}
+
+.world{
+    padding: 0px 20px;
+}
+
