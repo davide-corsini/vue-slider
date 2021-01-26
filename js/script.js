@@ -9,8 +9,8 @@ let app = new Vue({
             'https://i.pinimg.com/originals/e4/d6/68/e4d668d1400a3a4541f861cb383074e6.gif',
             'https://i.stack.imgur.com/Dil7r.gif',
             'https://media3.giphy.com/media/LwzDBXlwVOGz7zi8cp/giphy.gif',
-            'https://www.weather.gov/images/jetstream/clouds/prism.gif',
-            'https://www.edmundoptics.com/globalassets/knowledge-center/app-notes/optics/intro-polarization-fig-2a-new.gif'
+            'https://miro.medium.com/max/1600/1*kiAtJzGH6tcKnILUKJenvA.gif',
+            'https://s3.amazonaws.com/blog.invisionapp.com/uploads/2017/04/running-gif.gif'
         ],
         countImg: 0
 
@@ -24,8 +24,8 @@ let app = new Vue({
         nextImg(){
             //qui gli dico che quando il contatore é uguale alla lunghezza dell'array Img
             //mi torna a 0 , else incrementa
-            if(this.countImg == (this.immages.length - 1)){
-                this.countImg = 0
+            if(this.countImg == (this.images.length - 1)){
+                this.countImg = 0;
             }
             else{
                 this.countImg++;

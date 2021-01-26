@@ -71,31 +71,29 @@ h1{
 /* START MAIN CSS */
 
 .template-img{
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     border: 1px solid black;
 }
-.container-img1{
+.container-img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
     border: 4px solid red;
-    background-image: url('https://www.edmundoptics.com/globalassets/knowledge-center/app-notes/optics/intro-polarization-fig-2a-new.gif');
 }
-.container-img2{
+.container-img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
     border: 4px solid red;
-    background-image: url('https://www.edmundoptics.com/globalassets/knowledge-center/app-notes/optics/intro-polarization-fig-2a-new.gif');
 }
-.container-img3{
+.container-img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
     border: 4px solid red;
-    background-image: url('https://www.edmundoptics.com/globalassets/knowledge-center/app-notes/optics/intro-polarization-fig-2a-new.gif');
 }
 
 .sfondo-circle{
@@ -131,7 +129,10 @@ h1{
     font-size: 50px;
 }
 
-
+.img-array{
+    overflow: hidden;
+    display: flex;
+}
 
 
 
