@@ -16,7 +16,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     animation: run 10s linear;
-
 }
 
 @keyframes run{
@@ -29,7 +28,9 @@ body{
     max-width: 90%;
     margin: auto;
 }
-
+/* ------------------- */
+/* HEADER */
+/* ---------------------- */
 header{
     width: 100%;
     background-color: brown;
@@ -52,4 +53,40 @@ ul.head-menu{
 .world{
     padding: 0px 20px;
 }
+/* ------------------- */
+/* HEADER */
+/* ---------------------- */
 
+
+/* SECTION COMPARSA */
+h1{
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+}
+
+/* /////SECTION COMPARSA */
+
+
+/* START MAIN CSS */
+
+.template-img{
+    height: 1000px;
+    border: 1px solid black
+}
+.container-img{
+    width: 400px;
+    height: 500px
+}
+img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+/* END MAIN CSS */
