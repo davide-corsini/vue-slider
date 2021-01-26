@@ -46,40 +46,28 @@
                 <!-- main -->
                 <main>
                     
-                    <div class="template-img ">
+                    <div class="template-img container">
                         <div class="prev" @click='prevImg'>
                             <i class="fas fa-arrow-left"></i>
                         </div>
                         <!-- posso anche fare due incrementi diversi -->
-                        <!-- <div v-for='(item, index) in images' class="container-img" :style='`background-image: url(${images[countImg]})`'> -->
+                        <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
+                        <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
+                        <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
 
-                        <div class="img-array">
-                            <div v-for='(item, index) in images' class="container-img" :style='`background-image: url(${item})`'>
-                                <!-- <img :src="images[countImg]" alt=""> -->
-                            </div>
-
-                        </div>
-                        <!-- <div class="container-img">
-                            
-                        </div>
-                        <div class="container-img">
-                        
-                        </div> -->
-
-                        <div class="next" @click='nextImg'>
+                            <div class="next" @click='nextImg'>
                             <i class="fas fa-arrow-right"></i>
                         </div>
-
-                    </div>
-                    <div class='circles'>
-                        <i class="fas fa-icicles"></i>
-                        <i class="fas fa-icicles"></i>
-                        <i class="fas fa-icicles"></i>
-                        <i class="fas fa-icicles"></i>
-                        <i class="fas fa-icicles"></i>                            
-                        <i class="fas fa-icicles"></i>                            
-                        <i class="fas fa-icicles"></i>                            
-                        <i class="fas fa-icicles"></i>
+                        <div class='circles'>
+                            <i class="fas fa-icicles"></i>
+                            <i class="fas fa-icicles"></i>
+                            <i class="fas fa-icicles"></i>
+                            <i class="fas fa-icicles"></i>
+                            <i class="fas fa-icicles"></i>                            
+                            <i class="fas fa-icicles"></i>                            
+                            <i class="fas fa-icicles"></i>                            
+                            <i class="fas fa-icicles"></i>
+                        </div>
                     </div>
                 </main>
                 <!-- /main -->
