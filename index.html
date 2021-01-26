@@ -13,15 +13,15 @@
 <body>
     <div class="tot-container">
         <div id="app">
-            <button  @click='titleTime'>prova</button>
             <!-- header -->
             <header>
+                <div id='open'  @click='titleTime'>prova</div>
                     <div @click='ruotaTesto' class="rotation">
                         Click to rotate!
                     </div>
                     <div class="container">
                         <div class="row">
-                            <ul :class="'head-menu'+ ' '+rotationText ">
+                            <ul :class="'head-menu'+ ' ' + rotationText ">
                                 <li>Design news 2021</li>
                                 <li>Best Designer of 2020</li>
                                 <li class='mini-menu'>About Us
@@ -49,7 +49,7 @@
                 <!-- main -->
                 <main>
                     
-                    <div class="template-img container">
+                    <div :class="'template-img container' + ' ' + rotationText ">
                         <div class="prev" @click='prevImg'>
                             <i class="fas fa-arrow-left"></i>
                         </div>
@@ -62,7 +62,8 @@
                             <i class="fas fa-arrow-right"></i>
                         </div>
                         <div class='circles'>
-                            <i class="fas fa-icicles" @click='changeImg(indice)' v-for='(immagine, indice) in images' :class="(indice == count2) ? 'red' : ''"></i>
+                            <i class="fas fa-glasses" @click='changeImg(indice)' v-for='(immagine, indice) in images' :class="(indice == count2) ? 'red' : ''"></i>
+                            <p>Find Your Image</p>
                         </div>
                     </div>
                 </main>

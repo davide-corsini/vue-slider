@@ -24,7 +24,7 @@ let app = new Vue({
         countImg: 0,
         count2: 1,
         count3: 2,
-        rotationText: 'pippo',
+        rotationText: 'grades',
         interval: ''
 
     },
@@ -75,7 +75,7 @@ let app = new Vue({
             clearInterval(this.interval);
         },
         ruotaTesto(){
-            (this.rotationText == '') ? this.rotationText = '' : this.rotationText = 'grades';
+            (this.rotationText == 'grades') ? this.rotationText = 'grades-complete' : this.rotationText = 'grades';
         }
 
     }

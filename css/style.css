@@ -9,6 +9,8 @@ body{
     font-family: 'Indie Flower', cursive;
     font-size: 15px;
 }
+
+
 .tot-container{
     position: absolute;
     left: 0;
@@ -16,15 +18,17 @@ body{
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background-image: url('https://www.lasalettadellarte.it/wp-content/uploads/2020/09/ALEANDRO-RONCARA-Il-Principe-delle-maree-serigrafia-materica-su-supporto-rigido-40x40-1-scaled.jpg');
+    background-image: url('https://static.dezeen.com/uploads/2020/06/architects-designers-racial-justice-george-floyd-protests-dezeen-hero-a-852x479.jpg');
+    /* background-image: url('https://www.lasalettadellarte.it/wp-content/uploads/2020/09/ALEANDRO-RONCARA-Il-Principe-delle-maree-serigrafia-materica-su-supporto-rigido-40x40-1-scaled.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    animation: run 10s linear ;
+    animation: run 10s normal;
+    animation-iteration-count: 1;
 }
 
 @keyframes run{
-    0%{background-position: 0 0}
-    100%{background-position: 0 100vh;}
+    0%{background-position: 0 100vh}
+    100%{background-position: 0 0}
 }
 
 
@@ -37,7 +41,6 @@ body{
 /* ---------------------- */
 header{
     width: 100%;
-    background-color: brown;
     position: relative;
 }
 
@@ -54,8 +57,34 @@ ul.head-menu{
     transform: rotateX(360deg);
 }
 
+.red{
+    color: white;
+}
+
+.active{
+    color: blue
+}
+
 .grades{
     transform: rotateX(180deg);
+}
+
+#open{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 .rotation{
@@ -98,6 +127,10 @@ h1{
     font-size: 20px;
 }
 
+h1:hover{
+    color: white;
+}
+
 /* /////SECTION COMPARSA */
 
 
@@ -109,7 +142,6 @@ h1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 1px solid black;
     padding: 30px 0;
 }
 .container-img{
@@ -120,11 +152,9 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
-.red{
-    background-color: red;
-}
 
 .big{
     width: 650px;
@@ -140,24 +170,32 @@ h1{
 
 .prev i,
 .next i{
+    color: white;
     font-size: 80px;
-    border: 1px solid white;
     cursor: pointer;
 }
 
 .circles{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 50%;
     height: 150px;
-    border: 2px solid black;
+    border: 1px solid white;
+    margin-bottom: 200px;
 }
 
 .circles i{
     font-size: 50px;
 }
-
+.circles p{
+    align-self: flex-end;
+    color: white;
+}
+/* main{
+    padding-bottom: 1000px;
+} */
 
 
 
