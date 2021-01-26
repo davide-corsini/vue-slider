@@ -15,10 +15,13 @@
         <div id="app">
             <button  @click='titleTime'>prova</button>
             <!-- header -->
-                <header>
+            <header>
+                    <div @click='ruotaTesto' class="rotation">
+                        Click to rotate!
+                    </div>
                     <div class="container">
                         <div class="row">
-                            <ul class='head-menu'>
+                            <ul :class="'head-menu'+ ' '+rotationText ">
                                 <li>Design news 2021</li>
                                 <li>Best Designer of 2020</li>
                                 <li class='mini-menu'>About Us
@@ -51,22 +54,15 @@
                             <i class="fas fa-arrow-left"></i>
                         </div>
                         <!-- posso anche fare due incrementi diversi -->
-                        <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
-                        <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
+                        <div class="container-img" :style='`background-image: url(${images[count3]})`'></div>
+                        <div :class="'container-img'  + ' ' +  imgBig" :style='`background-image: url(${images[count2]})`'></div>
                         <div class="container-img" :style='`background-image: url(${images[countImg]})`'></div>
 
                             <div class="next" @click='nextImg'>
                             <i class="fas fa-arrow-right"></i>
                         </div>
                         <div class='circles'>
-                            <i class="fas fa-icicles"></i>
-                            <i class="fas fa-icicles"></i>
-                            <i class="fas fa-icicles"></i>
-                            <i class="fas fa-icicles"></i>
-                            <i class="fas fa-icicles"></i>                            
-                            <i class="fas fa-icicles"></i>                            
-                            <i class="fas fa-icicles"></i>                            
-                            <i class="fas fa-icicles"></i>
+                            <i class="fas fa-icicles" @click='changeImg(indice)' v-for='(immagine, indice) in images' :class="(indice == count2) ? 'red' : ''"></i>
                         </div>
                     </div>
                 </main>
