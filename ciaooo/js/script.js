@@ -12,7 +12,8 @@ let app = new Vue({
             'https://miro.medium.com/max/1600/1*kiAtJzGH6tcKnILUKJenvA.gif',
             'https://s3.amazonaws.com/blog.invisionapp.com/uploads/2017/04/running-gif.gif'
         ],
-        countImg: 0
+        left: 0,
+        countPosition: 50
 
     },
     methods: {
@@ -24,12 +25,7 @@ let app = new Vue({
         nextImg(){
             //qui gli dico che quando il contatore é uguale alla lunghezza dell'array Img
             //mi torna a 0 , else incrementa
-            if(this.countImg == (this.images.length - 1)){
-                this.countImg = 0;
-            }
-            else{
-                this.countImg++;
-            }
+            this.left += countPosition;
         },
         prevImg(){
             this.countImg--;

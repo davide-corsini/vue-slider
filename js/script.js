@@ -31,6 +31,12 @@ let app = new Vue({
     created(){
         this.interval = setInterval( this.nextImg,3000 );
     },
+
+    mounted(){
+        window.addEventListener('keydown', function(tasto){
+            app.arrowKey(tasto)
+        });
+    },
     methods: {
 
         titleTime(){
@@ -49,6 +55,7 @@ let app = new Vue({
 
             if (this.count2 == (this.images.length - 1)) {
                 this.count2 = 1;
+
             }
             else {
                 this.count2++;
@@ -56,19 +63,29 @@ let app = new Vue({
 
             if (this.count3 == (this.images.length - 1)) {
                 this.count3 = 2;
+
             }
             else {
                 this.count3++;
             }
-            
-        },
+
+        },   
         prevImg(){
             this.countImg--;
-            (this.countImg < 0) ? this.countImg = (this.images.length-1) : this.countImg --;
+            this.countImg =(this.countImg < 0) ? this.countImg = (this.images.length-1) : this.countImg --;
             this.count2--;
-            (this.count2 < 1) ? this.count2 = (this.images.length - 2) : this.count2--;
+            this.count2 = (this.count2 < 1) ? this.count2 = (this.images.length - 2) : this.count2--;
             this.count3--;
-            (this.count3 < 2) ? this.count3 = (this.images.length - 3) : this.count3--;
+            this.count3 = (this.count3 < 2) ? this.count3 = (this.images.length - 3) : this.count3--;
+        },
+        arrowKey(freccia){
+            this.keyCode = freccia.keyCode;
+            if(freccia.keyCode == 37){
+                this.prevImg();
+            }
+            else if(freccia.keyCode == 39){
+                this.nextImg();
+            }
         },
         changeImg(indice){
             this.count2 = indice;
@@ -80,3 +97,44 @@ let app = new Vue({
 
     }
 });
+
+
+// window.addEventListener('keydown', function () {
+//     //app.tastiera()
+
+//     if(keyCode == 39){
+//         app.nextImg()
+//     }
+//     else if(keyCode == 37){
+//         app.prevImg()
+//     }
+//     // app.prevImg()
+// });
+
+// tastiera(){
+        
+//         if(this.keyCode == 39){
+//             this.nextImg(keyCode)
+
+//         }
+//         else if (this.keyCode == 37){
+//             this.prevImg(keyCode)
+//         }
+//     } 
+
+// var app = new Vue({
+//     el: '#app',
+//     data: {
+    //*creo keyCode
+//         keyCode: ''
+//     },
+//     methods: {
+//         handleGlobalKeyDown(e) {
+//             this.keyCode = e.keyCode
+//         }
+//     }
+// })
+
+// window.addEventListener('keydown', function (e) {
+//     app.handleGlobalKeyDown(e)
+// });

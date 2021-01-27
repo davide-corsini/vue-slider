@@ -52,9 +52,9 @@
                         </div>
                         <!-- posso anche fare due incrementi diversi -->
                         <!-- <div v-for='(item, index) in images' class="container-img" :style='`background-image: url(${images[countImg]})`'> -->
-                            <div class="img-array">
-                            <div class="invisibile">
-                            <div v-for='(item, index) in images' class="container-img" style='margin: 0 20px;' :style='`background-image: url(${item})`'>
+                            <div class="img-array" style='height: 500px; background-color: blueviolet; align-items: center;'>
+                            <div class="invisibile" style='height: 300px'>
+                            <div v-for='(item, index) in images' class="container-img" style='margin: 0 20;' :style='`background-image: url(${item})`'>
                                 <!-- <img :src="images[countImg]" alt=""> -->
                             </div>
                             </div>

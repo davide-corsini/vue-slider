@@ -12,7 +12,7 @@ body{
 .tot-container{
     width: 100vw;
     height: 100vh;
-    background-image: url('https://www.lasalettadellarte.it/wp-content/uploads/2020/09/ALEANDRO-RONCARA-Il-Principe-delle-maree-serigrafia-materica-su-supporto-rigido-40x40-1-scaled.jpg');
+    /* background-image: url('https://www.lasalettadellarte.it/wp-content/uploads/2020/09/ALEANDRO-RONCARA-Il-Principe-delle-maree-serigrafia-materica-su-supporto-rigido-40x40-1-scaled.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     animation: run 10s ;
@@ -132,6 +132,5 @@ h1{
     background-color: aqua;
     transition: 200ms ease all;
 }
-
 
 /* END MAIN CSS */
