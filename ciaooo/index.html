@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tot-container">
+        <div id="app">
+            <button  @click='titleTime'>prova</button>
+            <!-- header -->
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <ul class='head-menu'>
+                                <li>Design news 2021</li>
+                                <li>Best Designer of 2020</li>
+                                <li class='mini-menu'>About Us
+                                    <div class='world'>
+                                        logo Mondo
+                                    </div>
+                                    <div>
+                                        lingua
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- /header -->
+                
+                <section class='title-comparsa'>
+                    <div class="row">
+                        <h1 v-if='timerTitle'>Design your dream</h1>
+                    </div>
+                </section>
+                
+                
+                
+                <!-- main -->
+                <main>
+                    
+                    <div class="template-img ">
+                        <div class="prev" @click='prevImg'>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <!-- posso anche fare due incrementi diversi -->
+                        <!-- <div v-for='(item, index) in images' class="container-img" :style='`background-image: url(${images[countImg]})`'> -->
+
+                        <div class="img-array">
+                            <div v-for='(item, index) in images' class="container-img" :style='`background-image: url(${item})`'>
+                                <!-- <img :src="images[countImg]" alt=""> -->
+                            </div>
+
+                        </div>
+                        <!-- <div class="container-img">
+                            
+                        </div>
+                        <div class="container-img">
+                        
+                        </div> -->
+
+                        <div class="next" @click='nextImg'>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                    <div class='circles'>
+                        <i class="fas fa-icicles"></i>
+                        <i class="fas fa-icicles"></i>
+                        <i class="fas fa-icicles"></i>
+                        <i class="fas fa-icicles"></i>
+                        <i class="fas fa-icicles"></i>                            
+                        <i class="fas fa-icicles"></i>                            
+                        <i class="fas fa-icicles"></i>                            
+                        <i class="fas fa-icicles"></i>
+                    </div>
+                </main>
+                <!-- /main -->
+        
+                
+                
+                
+                <!-- footer -->
+                <footer>
+                    
+                </footer>
+                <!-- /footer -->
+                
+        </div>
+
+        
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
