@@ -168,6 +168,8 @@ h1:hover{
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
+    transition: 400ms ease all;
+
 }
 
 
