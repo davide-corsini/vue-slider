@@ -121,13 +121,15 @@ h1{
     overflow: hidden;
     display: flex;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     flex-shrink: 0;
+    position: relative;
+    left: 0;
 }
 
 .invisibile{
     display: flex;
-    position: relative;
-    left: -450px;
     border: 2px solid blue;
     background-color: aqua;
     transition: 200ms ease all;
