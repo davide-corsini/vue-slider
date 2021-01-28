@@ -1,6 +1,6 @@
 let app = new Vue({
     el: '#app',
-    data:{
+    data:   {
         timerTitle: false,
         images: [
             'https://cdn.dribbble.com/users/43762/screenshots/1438973/ng-colab-space_day.gif',
@@ -12,8 +12,8 @@ let app = new Vue({
             'https://miro.medium.com/max/1600/1*kiAtJzGH6tcKnILUKJenvA.gif',
             'https://s3.amazonaws.com/blog.invisionapp.com/uploads/2017/04/running-gif.gif'
         ],
-        left: 0,
-        countPosition: 50
+        pippo: 0,
+        countPosition: 500
 
     },
     methods: {
@@ -25,10 +25,13 @@ let app = new Vue({
         nextImg(){
             //qui gli dico che quando il contatore é uguale alla lunghezza dell'array Img
             //mi torna a 0 , else incrementa
-            this.left += countPosition;
+            this.pippo += countPosition;
+            return pippo + 'px';
+            
         },
         prevImg(){
             this.countImg--;
         }
     }
+    
 });
